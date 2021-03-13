@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeDetilsActivity">
+
+    <ImageView
+        android:id="@+id/recipe_img_det"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/no_photo"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/recipe_text_det"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/recipe_img_det"
+        app:layout_constraintStart_toStartOf="@+id/recipe_img_det"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_img_det" />
+
+    <TextView
+        android:id="@+id/preiceTextView_dtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rs. 400"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/recipe_text_det"
+        app:layout_constraintStart_toStartOf="@+id/recipe_text_det"
+        app:layout_constraintTop_toBottomOf="@+id/recipe_text_det" />
+
+    <TextView
+        android:id="@+id/notes_dtl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/recipe_img_det"
+        app:layout_constraintStart_toStartOf="@+id/recipe_img_det"
+        app:layout_constraintTop_toBottomOf="@+id/preiceTextView_dtl"
+        android:gravity="center_horizontal" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentsShow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notes_dtl">
+    </androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentPostBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/commentsShow"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="48dp"
+        android:textColor="@color/white"
+        android:text="Post Comments"
+        android:background="@drawable/button_design"
+         />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentGetBtn"
+        app:layout_constraintStart_toStartOf="@id/commentPostBtn"
+        app:layout_constraintTop_toBottomOf="@id/commentsShow"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_design"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Show Comments"
+        android:layout_marginLeft="72dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

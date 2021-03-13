@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comments"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="#0B8DF4"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"/>
+                    <EditText
+                        android:id="@+id/comment_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:inputType="textMultiLine"
+                        android:scrollbars="vertical"
+                        android:layout_marginTop="20dp"
+                        android:hint="Write your Comment here !">
+                    </EditText>
+                    <Button
+                        android:id="@+id/postComment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="32dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="32dp"
+                        android:background="@drawable/button_design"
+                        android:layout_marginRight="5dp"
+                        android:text="post"
+                        android:layout_marginBottom="10dp"
+                        >
+                    </Button>
+                </LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "790104809584",
+    "project_id": "cookfood-787e2",
+    "storage_bucket": "cookfood-787e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:790104809584:android:187245d8c8792db1cb54b5",
+        "android_client_info": {
+          "package_name": "com.example.cookfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "790104809584-p4akf9ebri3js70dup79tj8mq285h5qa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMSTpqnsdtYQ-RR0BJGgWR-ejdZ83mBj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "790104809584-p4akf9ebri3js70dup79tj8mq285h5qa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
